@@ -1,5 +1,5 @@
 num_files=$1
-branch_name=b$num_files
+branch_name=branch_$num_files
 git co -b $branch_name || git co $branch_name
 python codegen.py $num_files
 git add .
